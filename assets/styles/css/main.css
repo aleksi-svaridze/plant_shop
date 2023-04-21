@@ -20,4 +20,63 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.header {
+  height: 124px;
+  background-image: linear-gradient(rgba(252, 11, 13, 0.2) 17%, rgba(74, 153, 211, 0) 70%, rgba(255, 255, 255, 0.2) 3%);
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+}
+.header__container {
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: initial initial;
+  max-width: 1075px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header__logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #4A99D3;
+  text-transform: capitalize;
+}
+.header__nav {
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 70px;
+}
+.header__links {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0F001A;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 7px;
+}
+.header__links--login::before {
+  content: url(../../images/user_icon.svg);
+  width: 57px;
+  height: 44px;
+}
+.header__links--sell::before {
+  content: url(../../images/add_icon.svg);
+  width: 57px;
+  height: 44px;
 }/*# sourceMappingURL=main.css.map */
