@@ -251,4 +251,94 @@ body {
 }
 .services__card-image-content {
   width: 45%;
+}
+
+.products {
+  padding: 137px 0 82px;
+}
+.products__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: initial;
+  gap: 80px 0;
+}
+.products__card {
+  width: 308px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.25);
+}
+.products__card--img {
+  width: 100%;
+}
+.products__card--text-content {
+  padding: 5px 15px;
+}
+.products__card--text-content-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  text-transform: capitalize;
+}
+.products__card--text-content-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+  margin: 7px 0 8px;
+  padding-right: 10px;
+}
+.products__card--text-content-number .number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #EB3223;
+}
+.products__card--text-content-number .condition {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 40px;
+  height: 16px;
+  background: #F12B2C;
+  border-radius: 4px;
+  text-align: center;
+}
+.products__card--text-content-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+}
+.products__card--text-content-desc .desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  opacity: 0.5;
+}
+.products__card--text-content-desc .date {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
