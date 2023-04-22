@@ -343,4 +343,103 @@ body {
   line-height: 14px;
   color: #000;
   opacity: 0.5;
+}
+
+.footer {
+  background-color: #EAF6FF;
+  padding: 57px 70px 146px;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 6%;
+}
+.footer__text-content {
+  width: 47%;
+}
+.footer__text-content-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.footer__text-content-desc {
+  font-size: 18px;
+  line-height: 22px;
+  color: #504A41;
+}
+.footer__info-content {
+  width: 47%;
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: center;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 80px;
+}
+.footer__info-content--contact-heading {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+}
+.footer__info-content--contact-link {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  display: block;
+  margin-bottom: 28px;
+  position: relative;
+  padding-left: 40px;
+}
+.footer__info-content--contact-link:nth-of-type(1)::before {
+  content: url(../../images/call_icon.svg);
+  width: 19.89px;
+  height: 19.93px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__info-content--contact-link:nth-of-type(2)::before {
+  content: url(../../images/mail_icon.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__info-content--contact-link:nth-of-type(3)::before {
+  content: url(../../images/location_icon.svg);
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer__info-content--about-heading {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+}
+.footer__info-content--about-desc {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 18px;
 }/*# sourceMappingURL=main.css.map */
