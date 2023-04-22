@@ -129,7 +129,6 @@ body {
   background-color: transparent;
   border-radius: 20px;
   padding: 0 30px 0 110px;
-  position: relative;
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
@@ -160,6 +159,7 @@ body {
   transform: translateY(-50%);
   width: 66.09px;
   height: 30.21px;
+  cursor: pointer;
 }
 .hero__offer-form::after {
   content: url(../../images/sliders_icon.svg);
@@ -169,6 +169,7 @@ body {
   transform: translateY(-50%);
   width: 34.7px;
   height: 32.1px;
+  cursor: pointer;
 }
 .hero__img {
   max-width: 436px;
@@ -181,6 +182,73 @@ body {
 }
 
 .services {
-  height: 400px;
-  background-color: green;
+  padding-top: 90px;
+}
+.services__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+}
+.services__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 30px 0;
+  width: 626px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 30px;
+}
+.services__card-text-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+}
+.services__card-text-content--heading {
+  font-weight: 600;
+  font-size: 29.65px;
+  line-height: 36px;
+  color: #000;
+  text-transform: capitalize;
+}
+.services__card-text-content--desc {
+  margin: 30px 0 20px;
+  font-weight: 300;
+  font-size: 20.65px;
+  line-height: 25px;
+  color: #000;
+}
+.services__card--btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+  width: 153px;
+  height: 48px;
+  background: #fc0b0d;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20.65px;
+  line-height: 25px;
+  color: #000;
+  text-transform: capitalize;
+}
+.services__card-image-content {
+  width: 45%;
 }/*# sourceMappingURL=main.css.map */

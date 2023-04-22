@@ -29,7 +29,6 @@
                 background-color: transparent;
                 border-radius: 20px;
                 padding: 0 30px 0 110px;
-                position: relative;
                 width: 100%;
                 height: 100%;
                 font-family: $font-inter;
@@ -53,6 +52,7 @@
                 transform: translateY(-50%);
                 width: 66.09px;
                 height: 30.21px;
+                cursor: pointer;
             }
 
             &::after {
@@ -63,6 +63,7 @@
                 transform: translateY(-50%);
                 width: 34.7px;
                 height: 32.1px;
+                cursor: pointer;
             }
         }
     }

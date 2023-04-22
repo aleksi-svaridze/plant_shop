@@ -1,4 +1,51 @@
 .services {
-    height: 400px;
-    background-color: green;
+    padding-top: 90px;
+
+    &__container {
+        @include flex(flex, row, center, space-between, initial, initial, 0, 0);
+    }
+
+    &__card {
+        @include flex(flex, row, center, space-between, initial, initial, 30px, 0);
+        width: 626px;
+        background: $color-gray-light;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 30px;
+
+        &-text-content {
+                width: 45%;
+                @include flex(flex, column, center, initial, initial, initial, 0, 0);
+
+            &--heading {
+                font-weight: 600;
+                font-size: 29.65px;
+                line-height: 36px;
+                color: $color-black;
+                text-transform: capitalize;
+            }
+            &--desc {
+                margin: 30px 0 20px;
+                font-weight: 300;
+                font-size: 20.65px;
+                line-height: 25px;
+                color: $color-black;
+            }
+        }
+        &--btn {
+            @include flex(flex, row, center, center, initial, initial, 0, 0);
+            width: 153px;
+            height: 48px;
+            background: $color-red;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 20.65px;
+            line-height: 25px;
+            color: $color-black;
+            text-transform: capitalize;
+        }
+        &-image-content {
+            width: 45%;
+        }
+    }
 }
