@@ -15,3 +15,9 @@ a:hover {
 a:active {
 
 }
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}

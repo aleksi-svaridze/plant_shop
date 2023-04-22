@@ -16,6 +16,14 @@ a:visited {
   text-decoration: none;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -25,7 +33,7 @@ body {
 .header {
   height: 124px;
   background-image: linear-gradient(rgba(252, 11, 13, 0.2) 17%, rgba(74, 153, 211, 0) 70%, rgba(255, 255, 255, 0.2) 3%);
-  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.05);
 }
 .header__container {
   display: flex;
@@ -70,13 +78,109 @@ body {
   align-content: initial;
   gap: 0 7px;
 }
-.header__links--login::before {
-  content: url(../../images/user_icon.svg);
+.header__links::before {
   width: 57px;
   height: 44px;
 }
+.header__links--login::before {
+  content: url(../../images/user_icon.svg);
+}
 .header__links--sell::before {
   content: url(../../images/add_icon.svg);
-  width: 57px;
-  height: 44px;
+}
+
+.hero__container {
+  height: 365px;
+  background-color: #EAF6FF;
+  padding: 63px 88px 0 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: initial initial;
+}
+.hero__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 30px 0;
+}
+.hero__offer-heading {
+  max-width: 500px;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+}
+.hero__offer-form {
+  width: 575px;
+  height: 69px;
+  border: 2px solid #fc0b0d;
+  border-radius: 20px;
+  position: relative;
+}
+.hero__offer-form--input {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 0 30px 0 110px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #004B84;
+}
+.hero__offer-form--input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #004B84;
+}
+.hero__offer-form--input::placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #004B84;
+}
+.hero__offer-form::before {
+  content: url(../../images/search_more.png);
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 66.09px;
+  height: 30.21px;
+}
+.hero__offer-form::after {
+  content: url(../../images/sliders_icon.svg);
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34.7px;
+  height: 32.1px;
+}
+.hero__img {
+  max-width: 436px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1297px;
+  margin: 0 auto;
+}
+
+.services {
+  height: 400px;
+  background-color: green;
 }/*# sourceMappingURL=main.css.map */
