@@ -4,7 +4,7 @@
         height: 365px;
         background-color: $color-blue-extra-light;
         padding: 63px 88px 0 96px;
-        @include flex (flex, row, flex-start, space-between, initial, initial, initial, initial);
+        @include flex (flex, row, flex-start, space-between, initial, initial, 0, 0);
     }
 
     &__offer {
