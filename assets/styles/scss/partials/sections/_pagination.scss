@@ -1,3 +1,27 @@
 .pagination {
-    
+    margin-bottom: 71px;
+
+    &__container {
+        @include flex(flex, row, center, space-between, initial, initial, 0, 14px);
+    }
+    &__line {
+        width: calc(100% - 221px);
+        height: 2px;
+        background-color: $color-gray;
+    }
+    &__btn {
+        width: 221px;
+        height: 70.25px;
+        background: $color-white;
+        border: 1px solid $color-red;
+        border-radius: 15px;
+
+        @include flex(flex, row, center, center, initial, initial, 0, 0);
+        font-weight: 500;
+        font-size: 29.8267px;
+        line-height: 36px;
+        color: $color-black;
+        text-transform: capitalize;
+        flex-shrink: 0;
+    }
 }

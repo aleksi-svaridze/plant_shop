@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.website-wrapper {
+  overflow: hidden;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -345,9 +349,47 @@ body {
   opacity: 0.5;
 }
 
+.pagination {
+  margin-bottom: 71px;
+}
+.pagination__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 14px;
+}
+.pagination__line {
+  width: calc(100% - 221px);
+  height: 2px;
+  background-color: #E5E5E5;
+}
+.pagination__btn {
+  width: 221px;
+  height: 70.25px;
+  background: #ffffff;
+  border: 1px solid #fc0b0d;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 0;
+  font-weight: 500;
+  font-size: 29.8267px;
+  line-height: 36px;
+  color: #000;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+
 .footer {
   background-color: #EAF6FF;
-  padding: 57px 70px 146px;
+  padding: 57px 0 146px;
 }
 .footer__container {
   display: flex;
@@ -357,6 +399,16 @@ body {
   flex-wrap: initial;
   align-content: initial;
   gap: 0 6%;
+  position: relative;
+}
+.footer__container::after {
+  content: url(../../images/dots_icon.svg);
+  width: 154px;
+  height: 154px;
+  position: absolute;
+  top: -132px;
+  right: -85px;
+  z-index: -5;
 }
 .footer__text-content {
   width: 47%;
@@ -437,6 +489,7 @@ body {
   color: #000;
 }
 .footer__info-content--about-desc {
+  display: block;
   font-size: 18px;
   line-height: 22px;
   color: #000;
