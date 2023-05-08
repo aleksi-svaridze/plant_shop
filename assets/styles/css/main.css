@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
@@ -409,6 +409,15 @@ body {
   top: -132px;
   right: -85px;
   z-index: -5;
+}
+.footer__container--without-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  gap: 0 6%;
 }
 .footer__text-content {
   width: 47%;
