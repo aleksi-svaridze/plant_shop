@@ -1,0 +1,141 @@
+.registration {
+    padding: 147px 0 99px;
+
+    &__container {
+        @include flex (flex, initial, initial, space-between, initial, initial, 0, 42px);
+    }
+
+    &__column-left {
+        width: calc(100% - 480px - 42px);
+
+        &--img {
+            width: 100%;
+        }
+    }
+    &__column-right {
+        width: 480px;
+
+        &--img {
+            width: 100%;
+        }
+    }
+    &__text-content {
+        width: 440px;
+        margin: 0 auto;
+    }
+    &__heading {
+        font-family: $font-poppins;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: $color-black;
+    }
+    &__desc {
+        font-family: $font-poppins;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #8D8D8D;
+    }
+    &__form {
+        width: 440px;
+        margin: 68px auto 20px;
+
+        &--input {
+            display: block;
+            width: 100%;
+            height: 36px;
+            border-bottom: 1px solid $color-black;
+            margin-bottom: 30px;
+        }
+        &--label {
+            font-family: $font-poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $color-black;
+            text-transform: capitalize;
+            display: block;
+            width: 100%;
+        }
+        &--btn {
+            width: 435px;
+            height: 65px;
+            background: $color-red;
+            border-radius: 20px;
+            margin-top: 39px;
+
+            font-family: $font-poppins;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+            color: $color-white;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    }
+}
+.login__google--btn {
+    @include flex (flex, initial, center, center, initial, initial, 0, 18px);
+    font-family: $font-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $color-red;
+    margin: 0 auto 97px;
+
+    width: 435px;
+    height: 65px;
+    border: 1px solid #8D8D8D;
+    border-radius: 20px;
+
+    &-img {
+        width: 23.83px;
+        height: 24.22px;
+    }
+}
+.sign__up {
+    font-family: $font-poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    text-align: center;
+
+    &--btn {
+        font-family: $font-poppins;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #3EC1F3;
+        margin-left: 10px;
+    }
+}
+.tab-btn__container {
+    @include flex (flex, initial, initial, center, initial, initial, 0, 0);
+    margin-bottom: 12px;
+}
+.tab-btn {
+    width: 239px;
+    height: 52px;
+    background: #EAF6FF;
+
+    font-family: $font-poppins;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    text-transform: uppercase;
+
+    &--active {
+        background: #E6E6E6;
+    }
+}
